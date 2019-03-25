@@ -1,4 +1,6 @@
 git clone --depth 1 https://github.com/raspberrypi/firmware
 git clone https://github.com/swarren/u-boot.git -b rpi_dev
 sudo apt-get install gcc-aarch64-linux-gnu
+export ARCH=arm
+export CROSS_COMPILE=aarch64-linux-gnu-
 make rpi_3_defconfig
